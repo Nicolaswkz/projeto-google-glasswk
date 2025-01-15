@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado!</title>
+</head>
+<body>
+
+    <p> 
+        Obrigado!
+
+    </p>
+    <div class="container">
+        <form action="https://formsubmit.co/nicolasvendedorwk@gmail.com" method="POST" oninput="calc_total();">
+     <b>
+    <fieldset id="usuario"><legend>Identificação do Usuário</legend> 
+       
+   </form>
+       <p><label for="cnome">Nome:</label> <input type="text" name="tnome" id="cnome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
+       <p><label for="csenha">Senha:</label><input type="password" name="tsenha" id="csenha" size="8" maxlength="8" placeholder="8 Digitos"/></p>
+       <p><label for="cmail">E-mail:</label><input type="email" name="tmail" id="cmail" size="20" maxlength="40"/></p>
+       <fieldset id="sexo"><legend>sexo:</legend>
+           <input type="radio" name="tsexo" id="cmasc"/> <label for="cmasc">Masculino</label><br/>
+           <input type="radio" name="tsexo" id="cfem"/> <label for="cfem">Feminino</label>
+         </fieldset>
+       <p><label for="cnasc">Data de Nascimento:</label><input type="date" name="tnasc" id="cnasc"/> </p>
+     </fieldset> 
+   
+     <fieldset id="endereco">
+       <legend>Endereço do Usuário</legend>
+       <p><label for="cRua">Logradouro:</label>
+           <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Trava, ..."/></p>
+       
+       <p><label for="cNum">Número:</label>
+           <input type="number" name="tNum" id="cNum" min="0" max="99999"/></p>
+   
+       <p><label for="cEst">Estado:</label>
+       <select>
+         <option value="AC">Acre</option>
+         <option value="AL">Alagoas</option>
+         <option value="AP">Amapá</option>
+         <option value="AM">Amazonas</option>
+         <option value="BA">Bahia</option>
+         <option value="CE">Ceará</option>
+         <option value="DF">Distrito Federal</option>
+         <option value="ES">Espírito Santo</option>
+         <option value="GO">Goiás</option>
+         <option value="MA">Maranhão</option>
+         <option value="MT">Mato Grosso</option>
+         <option value="MS">Mato Grosso do Sul</option>
+         <option value="MG">Minas Gerais</option>
+         <option value="PA">Pará</option>
+         <option value="PB">Paraíba</option>
+         <option value="PR">Paraná</option>
+         <option value="PE">Pernambuco</option>
+         <option value="PI">Piauí</option>
+         <option value="RJ">Rio de Janeiro</option>
+         <option value="RN">Rio Grande do Norte</option>
+         <option value="RS">Rio Grande do Sul</option>
+         <option value="RO">Rondônia</option>
+         <option value="RR">Roraima</option>
+         <option value="SC">Santa Catarina</option>
+         <option value="SP" selected>São Paulo</option>
+         <option value="SE">Sergipe</option>
+         <option value="TO">Tocantins</option>
+         <option value="EX">Estrangeiro</option>
+       </select> </p>
+       <p><label for="cCid">Cidade:</label>
+       <input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua Cidade" list="cidades"/></p>
+       
+   </fieldset>
+   
+   <fieldset id="mensagem">  
+       <legend>Mensagem do Usuário</legend>
+       <p><label for="cUrg">Grau de Urgência:</label>
+           Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/>Máx</p>
+       <p><label for="cMsg">Mensagem:</label>
+       <textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
+   </fieldset>
+   
+   <fieldset id="pedido">
+       <legend>Quero um Google Glass</legend>
+       <p><input type="checkbox" name="tPed" id="cPed" checked>
+       <label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
+      
+       <p><label for="cCor">Cor:</label>
+       <input type="color" name="cCor" id="cCor" valeu="0000FF"/></p>
+       
+       <p><label for="cQtd">Quantidade:</label>
+       <input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0"></p>
+       
+       <p><label for="cTot">Preço Total:</label> R$
+       <input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly></p>
+   </fieldset>
+   
+   <input type="image" name="tEnviar"src="_imagens/botao-enviar.png"/>
+   </div>
+</body>
+</html>

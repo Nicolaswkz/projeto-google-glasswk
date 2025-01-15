@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+
+section#conteudo {
+    float: center;
+    width: 1000px;
+    height: 500px;
+    
+    
+    
+}
+
+iframe#frame-spec {
+    width: 400px;
+    height: 500px;
+    border: none;
+    overflow: hidden;
+    float: right;
+}
+
+iframe#frame-spec::-webkit-scrollbar {
+    display: none;
+}
+
+article h2 {
+    color: #888888;
+    margin: 0px;
+   
+}
+
+article h1 {
+    
+    font-size: 30pt;
+    color: dimgrey;
+    margin: 0px;
+}
+
+article h3#att {
+    font-size: 20px;
+    float: right;
+    margin-top: -25px;
+    color: #888888;
+}
